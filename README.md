@@ -2,4 +2,4 @@ Starter code for an Java programming assignment to learn maps. Details of the as
 
 
 
-Icons from Icon8
+Icons by Icon8
