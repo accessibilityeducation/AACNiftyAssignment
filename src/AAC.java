@@ -46,8 +46,8 @@ public class AAC implements ActionListener {
 	 *                 will be in the AAC
 	 */
 	public AAC(String filename) {
-		this.page = new AACCategory("test");
-		// this.page = new AACMappings(filename);
+//		this.page = new AACCategory("test");
+		this.page = new AACMappings(filename);
 		this.images = this.page.getImageLocs();
 		this.startIndex = 0;
 		this.endIndex = Math.min(NUM_ACROSS * NUM_DOWN, this.images.length);
@@ -139,7 +139,7 @@ public class AAC implements ActionListener {
 			pane.add(nextArrow, BorderLayout.LINE_END);
 		}
 
-		JLabel ack = new JLabel("All provided icons are from icons8: icons8.com");
+		JLabel ack = new JLabel("All emojis designed by OpenMoji - the open-source emoji and icon project. License: CC BY-SA 4.0");
 		pane.add(ack, BorderLayout.PAGE_END);
 		pane.revalidate();
 		pane.requestFocusInWindow();
